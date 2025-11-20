@@ -1,0 +1,116 @@
+/* ================================
+   GEMA NUSANTARA – SIMPLE THEME
+   ================================ */
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(to bottom, #f7f2e7, #f4e3c9);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #b64526, #d16f36, #e8a04b);
+  color: white;
+  padding: 30px;
+  text-align: center;
+
+  /* Tampilan simple tanpa motif */
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 700;
+}
+
+header p {
+  margin-top: 8px;
+  opacity: 0.95;
+}
+
+/* Pilihan Provinsi */
+.pilihan {
+  margin: 30px auto;
+  text-align: center;
+}
+
+select, button {
+  padding: 12px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 2px solid #c87a3d;
+  outline: none;
+}
+
+/* Dropdown */
+select {
+  background: #fffaf1;
+  color: #333;
+}
+
+/* Tombol */
+button {
+  background: #c45b21;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #9e4518;
+  transform: scale(1.05);
+}
+
+/* Kotak Cerita */
+#hasil {
+  max-width: 750px;
+  background: #fffef9;
+  padding: 25px;
+  margin: 30px auto;
+  border-radius: 15px;
+
+  /* Border lembut Nusantara */
+  border: 3px solid #e2c79f;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Judul Cerita */
+#judul-cerita {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #9d3f22;
+  font-weight: 700;
+}
+
+/* Gambar Cerita */
+#hasil img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 15px auto;
+  display: block;
+  object-fit: cover;
+
+  /* Border emas lembut */
+  border: 3px solid #d3a974;
+
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* Isi Cerita */
+#isi-cerita {
+  line-height: 1.7;
+  text-align: justify;
+  font-size: 17px;
+  margin-top: 15px;
+}
