@@ -1,27 +1,40 @@
 /* ================================
-   GEMA NUSANTARA – SIMPLE THEME
+   GEMA NUSANTARA – MOTIF BATIK HALUS
+   HEADER & FOOTER SIMPLE
    ================================ */
 
+/* Body */
 body {
   font-family: 'Poppins', Arial, sans-serif;
-  background: linear-gradient(to bottom, #f7f2e7, #f4e3c9);
+  background-color: #ffffff; /* putih murni */
   margin: 0;
   padding: 0;
   color: #333;
+  position: relative;
 }
 
-/* Header */
+/* Overlay batik timbul (lebih terlihat tetapi tetap lembut) */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('batik.jpg') repeat;
+  background-size: 300px;
+  opacity: 0.12;  /* motif samar tapi terlihat */
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Header simple */
 header {
-  background: linear-gradient(135deg, #b64526, #d16f36, #e8a04b);
-  color: white;
-  padding: 30px;
+  background: linear-gradient(135deg, #a63d1f, #c45b21); /* merah bata kental */
+  color: #f5e1a4; /* teks emas */
+  padding: 25px;
   text-align: center;
-
-  /* Tampilan simple tanpa motif */
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
 header h1 {
@@ -31,8 +44,9 @@ header h1 {
 }
 
 header p {
-  margin-top: 8px;
-  opacity: 0.95;
+  margin-top: 6px;
+  opacity: 0.9;
+  font-weight: 500;
 }
 
 /* Pilihan Provinsi */
@@ -73,14 +87,12 @@ button:hover {
 /* Kotak Cerita */
 #hasil {
   max-width: 750px;
-  background: #fffef9;
+  background: rgba(255,254,249,0.95); /* semi transparan */
+  backdrop-filter: blur(3px); /* efek kaca lembut */
   padding: 25px;
   margin: 30px auto;
   border-radius: 15px;
-
-  /* Border lembut Nusantara */
   border: 3px solid #e2c79f;
-
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
@@ -100,10 +112,7 @@ button:hover {
   margin: 15px auto;
   display: block;
   object-fit: cover;
-
-  /* Border emas lembut */
   border: 3px solid #d3a974;
-
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
@@ -113,4 +122,32 @@ button:hover {
   text-align: justify;
   font-size: 17px;
   margin-top: 15px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #a63d1f, #c45b21); /* sama seperti header */
+  color: #f5e1a4; /* warna emas */
+  text-align: center;
+  padding: 20px 15px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.15);
+  font-weight: 500;
+  font-size: 16px;
+
+  position: fixed;   /* tambahan supaya footer stay di bawah */
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+footer a {
+  color: #f5e1a4;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
